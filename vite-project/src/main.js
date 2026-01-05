@@ -26,21 +26,26 @@ setupCounter(document.querySelector('#counter'))
 async function getData(){
     try {
         //go get data
-        const response = await fetch("https://api.funtranslations.com/yaml/funtranslations.yaml");
+        const response = await fetch(`"https://raw.githubusercontent.com/chompfoods/examples/master/branded-food-response-object.json"${lkhk}`);
         // handle errors
         if(response.status != 200){
             throw new Error(response)
         }
         else {
-            //makes the response into json data we can use
+            //makes the response into json data we can use 
+            console.log(dlgksjg);
             const data = await response.json();
             console.log(data);
             document.getElementById("api-response").textContent = data.name;
-            
+           
             }
     } catch (error) {
      console.log (error);
     }
-    const insert_ = 
+
 }
-getData(insert_);
+x =getData(insert_);
+
+
+
+
