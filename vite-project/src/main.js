@@ -41,6 +41,31 @@ async function getData(){
 }
 getData(); 
 
+// function inject(Data) {
+// const container = document.querySelector(".container"); 
+// const html = `<div class ="card" data-title= "${item.name}" >
+//   <h2 class="card__heading">${item.name}</h2>
+//   <h3 class="card__heading">${item.brand}</h3>
+//   <img src="${item.image}"><h4> $${item.price}</h4>
+//   <h5 class="card__heading">${item.barcode}</h5>
+//   <h6 class="card__heading">${item.ingredients}</h6>
+// </div>`
+// container.insertAdjacentHTML('afterbegin', html);
+// }
+// items.forEach((item) => inject(item))
+
+
+
+ companies = {};
+ shopItems.forEach((item) => {
+  let brand = item.brand;
+  if(!companies[brand]) {
+    companies[brand] = 1;
+  } else {
+    companies[brand] = companies[brand] + 1;
+  }
+ })
+
 
 
 
