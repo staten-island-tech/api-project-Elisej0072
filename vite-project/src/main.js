@@ -41,6 +41,8 @@ async function getData(){
 }
 getData(); 
 
+
+
 // function inject(Data) {
 // const container = document.querySelector(".container"); 
 // const html = `<div class ="card" data-title= "${item.name}" >
