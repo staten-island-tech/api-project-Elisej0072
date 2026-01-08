@@ -30,13 +30,12 @@ async function getData(){
             throw new Error(response)
         }
         else {
-            console.log(dlgksjg);
             const data = await response.json();
             console.log(data);
             document.getElementById("api-response").textContent = data.name;
             }
     } catch (error) {
-     console.log (error);
+     console.log(error);
     }
 }
 getData(); 
@@ -58,7 +57,7 @@ getData();
 
 
 
- companies = {};
+/*  companies = {};
  shopItems.forEach((item) => {
   let brand = item.brand;
   if(!companies[brand]) {
@@ -68,6 +67,6 @@ getData();
   }
  })
 
-
+ */
 
 
