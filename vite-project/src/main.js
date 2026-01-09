@@ -1,4 +1,3 @@
-import './style.css'
 /* import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
@@ -25,7 +24,7 @@ setupCounter(document.querySelector('#counter'))
 
 async function getData(){
     try {
-        const response = await fetch(`"https://raw.githubusercontent.com/chompfoods/examples/master/branded-food-response-object.json"${main}`);
+        const response = await fetch(`/api/fruit/all${main}`);
         if(response.status != 200){
             throw new Error(response)
         }
@@ -42,6 +41,10 @@ getData();
 
 
 
+
+
+
+
 // function inject(Data) {
 // const container = document.querySelector(".container"); 
 // const html = `<div class ="card" data-title= "${item.name}" >
@@ -54,7 +57,6 @@ getData();
 // container.insertAdjacentHTML('afterbegin', html);
 // }
 // items.forEach((item) => inject(item))
-
 
 
 /*  companies = {};
