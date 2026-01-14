@@ -4,12 +4,36 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vite-project</title>
-  </head>
-  <body>
-    <h2 id="api-response"></h2>
-    <div id="app"></div>
+    <title> The Fruit Page </title>
+       <script src="https://tailwindcss.com/docs/installation"></script>
+   </head>
+   <body>
+       <h1> The Fruit Page </h1>
 
-    <script type="module" src="/src/main.js"></script>
+       <div class="container"></div>
+
+
+       <h2 class="text-2xl font-semibold mt-8 mb-4"> All Fruits </h2>
+       <div id="api-response" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+
+
+       <h2 class="text-2xl font-semibold mt-8 mb-4"> Fruit Families </h2>
+       <div id="family-count" class="space-y-1"></div>
+           <h3 class="text-2xl font-semibold mt-8 mb-4"> Filter by Family </h3>
+           <div id="filter-buttons" class="flex flex-wrap gap-2 mb-4"></div>
+        
+
+
+       <h2 class="text-2xl font-semibold mt-8 mb-4"> Fruit IDs </h2>
+       <div id="id-count" class="space-y-1"></div>
+           <h3 class="text-2xl font-semibold mt-8 mb-4"> Filter by ID </h3>
+           <div class="flex gap-2 mb-4">
+           <input type="number" id="id-search" placeholder="Enter fruit ID" class="border border-gray-300 rounded px-3 py-2 flex-1">
+           <button id="search-btn" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Search</button>
+           </div>
+           <div id="id-result" class="space-y-2"></div> 
+
+
+              <script type="module" src="/src/main.js"></script>
   </body>
 </html>
