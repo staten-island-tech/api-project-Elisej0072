@@ -1,3 +1,5 @@
+import './style.css';
+
 /* import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
@@ -24,7 +26,7 @@ setupCounter(document.querySelector('#counter'))
 
 async function getData(){
    try {
-       const response = await fetch ("api/fruit/all");
+       const response = await fetch ("https://www.fruityvice.com/api/fruit/3");
        if(response.status != 200){
            throw new Error(response)}
            //gets data from api, checks for errors
